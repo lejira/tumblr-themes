@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--- 
+
+Theme by 
+          not-what-it-themes.tumblr.com
+
+Please do not repost or claim as your own!
+You can edit the theme but please don't 
+remove the credit!!
+
+-->    
+
+<head>
+<title>{Title}</title>
+
+<link rel="shortcut icon" type="image/png" href="{FavIcon}"/>
+<link rel="alternate" type="application/rss+xml" href="{RSS}"/>
+
+
+<meta name="image:Background" content=""/>
+<meta name="image:Window" content=""/>
+<meta name="color:Background" content="#ffffff"/>
+<meta name="color:Blog Description" content="#323232"/>
+
+<meta name="color:Link Color" content="#ffffff"/>
+<meta name="color:Link Hover Color" content="#ffffff"/>
+<meta name="color:Text" content="#ffffff"/>
+<meta name="color:Secondary Text" content="#ffffff"/>
+<meta name="color:Accent Color" content="#ffffff"/>
+
+<meta name="text:Link 1" content="index"/>
+<meta name="text:Link 1 URL" content="/"/>
+<meta name="text:Link 2" content="askbox"/>
+<meta name="text:Link 2 URL" content="/ask"/>
+<meta name="text:link 3" content="archive"/>
+<meta name="text:Link 3 URL" content="/archive"/>
+<meta name="text:Link 4" content="link 4"/>
+<meta name="text:Link 4 URL" content="/"/>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet"> 
+
+<style type="text/css">
+
+body {
+    color: {color:Text};
+    background-color: {color:Background};
+    background-image: url({image:Background});
+    background-repeat: repeat;
+    font-size: 13px; 
+    font-family: 'Raleway', sans-serif;
+    line-height: 16px;
+    padding: 0px;
+    margin: 0 0 0 0;
+}
+
+a {
+	text-decoration:none;
+	color:{color:Link Color};
+}
+
+a:hover {
+	text-decoration:none;
+	color:{color:Link Hover Color};
+}
+
+h1 {
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+span {
+	background-color:rgba(244, 244, 244, 0.75);
+	padding: 1px 2px;
+}
+
+.tmblr-iframe, .iframe-controls–desktop {
+    top: 15px!important;
+    display:None!important;
+}
+
+/*------------------------------------------------------*/
+/*               ICONS  AND  MENUBAR                    */
+/*------------------------------------------------------*/
+
+.icons {
+    margin: 0 0 0 0px;
+    list-style-type: none;
+    padding: 0;
+    width: 80px;
+    height: 100%;
+    float: right;
+    position: fixed;
+    z-index: 2;
+    top: 40px;
+    right: 40px;
+    text-align: center;
+}
+
+.harddrive, .folder, .document, .paperbin, .userbox, #menubarl, #menubarr, #postheader, #postbottom, .paginationbox {
+    background-image: url('https://static.tumblr.com/3epcqrq/Xugpazqfj/mactheme_2.png');
+    margin: auto;
+}
+
+.harddrive {
+    height: 32px;
+    width: 32px;
+    background-position: 0px -53px;
+}
+
+.folder {
+    height: 32px;
+    width: 32px;
+    background-position: -32px -53px;
+}
+
+.document {
+    height: 32px;
+    width: 32px;
+    background-position: -64px -53px;
+}
+
+.paperbin {
+    height: 32px;
+    width: 32px;
+    background-position: -96px -53px;
+    bottom: 70px;
+    right: 100px;
+    position: fixed;
+}
+
+.menubar {
+	width:100%;
+	height:20px;
+	background-image: url('https://static.tumblr.com/3epcqrq/WBfpay82n/mactheme_barbg.png');
+	background-repeat: repeat-x;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+}
+
+#menubarl {
+    height: 20px;
+    width: 450px;
+    background-position: 0px -85px;
+    position: 0px 0px;
+    float:left;
+}
+
+#menubarr {
+    height: 20px;
+    width: 100px;
+    background-position: -450px -85px;
+    float:right;
+}
+
+/*---------------------------------------------------------*/
+/*                       ACTUAL POSTS                      */
+/*---------------------------------------------------------*/
+
+.entrywrapper {
+	margin-left:10%;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    height: 100%;
+    width: 550px;
+    padding:0px;
+}
+
+.entry {
+    height:auto;
+    width: 550px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    background-image: url('https://static.tumblr.com/3epcqrq/J5upaybyi/mactheme_postbg.png');
+    background-repeat:repeat-y;
+    text-align: left;
+}
+
+#postheader {
+    height: 21px;
+    width: 550px;
+    background-position: 0px 0px;
+    margin-bottom: 5px;
+}
+
+#postbottom {
+    height: 7px;
+    width: 550px;
+    background-position: 0px -46px;
+}
+
+.post-res { width: 520px;text-align: left; padding: 0px 10px 0px 10px;}
+.post-res img { max-width: 100%; }
+
+
+#info {
+    text-align: right;
+    color: {color:Secondary Text};
+    background-color: #E7E7E7;
+    margin-left: 6px;
+    width:517px;
+
+}
+
+.tags {
+	font-size: 11px;
+	color:{color:Accent Color};
+}
+
+.asks {
+    background-color: #E7E7E7;
+    padding:8px 8px 8px 8px;
+    margin-left:8px;
+}
+
+/*------------------------------------------------------------------*/
+/*             USER DESCRIPTION AND PAGINATION                      */
+/*------------------------------------------------------------------*/
+
+.userbox {
+    width:240px;
+    height: 271px;
+    background-position: 0px -105px;
+    position: fixed;
+    top:100px;
+    right:200px;
+    z-index: 2;
+}
+
+.userdescription {
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 22px;
+    left: 6px;
+    height: 224px;
+    width: 208px;
+    text-align: justify;
+    background-color:{color:Blog Description};
+    z-index: 3;
+}
+
+.paginationbox {
+	z-index: 1;
+	position: fixed;
+    background-position: -240px -105px;
+    width: 240px;
+    height: 198px;	
+    top:300px;
+    right:300px;
+}
+
+.paginationbg {
+	padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 22px;
+    left: 6px;
+    height: 102px;
+    width: 208px;
+    text-align: center;
+    background-color:{color:Accent Color};
+    background-image: url({image:Window});
+    z-index: 1;
+}
+
+.pagination {
+	padding: 5px 10px;
+    position: absolute;
+    width:208px;
+    height:40px;
+    bottom:4px;
+    left: 6px;
+    z-index: 1;
+    background-color: {color:Blog Description};
+    text-align: center;
+}
+
+
+</style>
+
+</head>
+<body>
+	<div class="wrapper">
+
+		<!-- Upper Menu Bar, not functional, only for decoration -->
+		<div class="menubar">
+			<div id="menubarl"></div><div id="menubarr"></div>
+		</div>
+
+		<!-- Icons on the right, functioning as links -->
+		<div class="icons">
+			<a class="home" href="/">
+				<div class="harddrive"></div>
+				<span>Home</span><br>
+			</a><br>
+			{block:AskEnabled}
+			<a class="ask" href="/ask">
+				<div class="document"></div>
+				<span>{AskLabel}</span><br>
+			</a><br>
+			{/block:AskEnabled}
+			{block:SubmitEnabled}
+			<a class="submit" href="/submit">
+				<div class="document"></div>
+				<span>{SubmitLabel}</span><br>
+			</a><br>
+			{/block:SubmitEnabled}
+			<a class="customlink" href="{text:Link 1 url}">
+				<div class="folder"></div>
+				<span>{text:Link 1}</span><br>
+			</a><br>
+			<a class="customlink" href="{text:Link 2 url}">
+				<div class="folder"></div>
+				<span>{text:Link 2}</span><br>
+			</a><br>
+			<a class="customlink" href="{text:Link 3 url}">
+				<div class="folder"></div>
+				<span>{text:Link 3}</span><br>
+			</a><br>
+			<a class="customlink" href="{text:Link 4 url}">
+				<div class="folder"></div>
+				<span>{text:Link 4}</span><br>
+			</a>
+			<a class="trash">
+			    <div class="paperbin"><br><br><span>Trash</span></div>
+			</a>
+		</div>
+
+		<!-- User Box, containing title and description of Blog-->
+		<div class="userbox"> 
+			<div class="userdescription">
+			    <h1>{Title}</h1><br>
+			    {Description}
+			</div>
+		</div>
+
+        <!-- Box containing Pagination-->
+		<div class="paginationbox"> 
+			<div class="paginationbg"></div>
+			<div class="pagination">
+				{block:Pagination}
+				on page {CurrentPage} of {TotalPages}<br>
+				{block:PreviousPage}
+					<a href="{PreviousPage}">⇠Previous</a>&nbsp
+				{/block:PreviousPage}
+				{block:NextPage}
+					<a href="{NextPage}">Next⇢</a>
+				{/block:NextPage}
+				{/block:Pagination}
+			</div>
+		</div>
+
+		<!-- Beginning of the Posts -->
+		<div class="entrywrapper">
+		
+		{block:Posts}
+		<div class="entry">
+			<div id="postheader"></div>
+
+			{block:Text}
+				<div class="post-res">{block:Title}<h1>{Title}</h1><br>{/block:Title}
+				{Body}</div>
+			{/block:Text}
+
+			{block:Photo}
+				{LinkOpenTag}<center><div class="post-res"><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"></div></center>{LinkCloseTag}
+				{block:Caption}<div class="post-res">{Caption}</div>{/block:Caption}</left>{/block:Photo}
+			{/block:Photo}
+
+			{block:Photoset}
+			<center>{Photoset-500}</center>
+			{block:Caption}<div class="post-res">{Caption}</div>{/block:Caption}
+			{/block:Photoset}
+
+			{block:Quote}
+				<div class="post-res"><h1><b><i>"{Quote}"</i></b></h1>
+				{block:Source}&nbsp &nbsp— {Source}{/block:Source}</div>
+			{/block:Quote}
+
+			{block:Link}
+				<div class="post-res"><h1><a href="{URL}" {Target}>{Name}</a></h1>
+				{block:Description}{Description}{/block:Description}</div>
+			{/block:Link}
+
+			{block:Chat}
+				<div class="post-res">{block:Title}<h1>{Title}</h1>{/block:Title}
+				{block:Lines}{block:Label}<b style="color:{color:Accent Color}; text-transform: uppercase;">{Label}</b>{/block:Label} {Line}<br><br>{/block:Lines}
+				</div>
+			{/block:Chat}
+
+			{block:Video}
+				<center>{Video-500}</center>
+				{block:Caption}<div class="post-res">{Caption}</div>{/block:Caption}
+			{/block:Video}
+
+			{block:Audio}
+				<center>{AudioEmbed-500}</center>
+				{block:Caption}<div class="post-res">{Caption}</div>{/block:Caption}
+			{/block:Audio}
+
+			{block:Answer}
+				<div class="post-res">
+				<div class="asks">
+				<h1>{Asker} asked:</h1>"<i>{Question}</i>"</div>
+				<div style="margin-left: 10px;">{Answer}</div>
+				</div>
+			{/block:Answer}
+
+			<div id="info" class="post-res">
+				{block:Date}posted {TimeAgo}{/block:Date} with <a href="{Permalink}">{NoteCountWithLabel}</a><br>
+				{block:RebloggedFrom}via: <a href="{ReblogParentURL}" title="{ReblogParentTitle}">{ReblogParentName}</a>
+				, source: <a href="{ReblogRootURL}"title="{ReblogRoottitle}">{ReblogRootName}</a>{/block:RebloggedFrom}<br>
+
+				<div class="tags">{block:HasTags}{block:Tags} #<a href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}</div>  
+			
+
+				{block:PostNotes}<div style="text-align: left;"><a name="notes">{PostNotes}</a></div>{/block:PostNotes}
+			</div>
+
+			<div id="postbottom"></div>
+			
+			</div>
+		{/block:Posts}
+		
+		</div>
+</div>
+</body>
